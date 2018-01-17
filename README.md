@@ -14,7 +14,7 @@ User can :
 
 To run this App follow this commands after install Application:
   * npm install
-   *json-server --watch toDoList.json
-    * to run serve ( ionic serve --lab )
-    * to run in your device ( ionic cordova run android --l or ionic cordova run ios --l ) 
+  * json-server --watch toDoList.json
+   * to run serve ( ionic serve --lab )
+   * to run in your device ( ionic cordova run android --l or ionic cordova run ios --l ) 
     
