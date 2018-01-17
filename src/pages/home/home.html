@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="primary" >
+      <button ion-button menuToggle >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Home</ion-title>
+    <ion-buttons end >
+      <button (click)="logout()" id="logoutBtn">
+        <ion-icon name="ios-log-out-outline"  ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+  <ion-content>
+  <div id="chartDiv" >
+    <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</ion-content>
+
+<!--
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="display: block">
+    <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</ion-content>
+-->

@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ListTasksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tasks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+    <ion-list no-lines>
+      <ion-list-header >
+        All Tasks
+      </ion-list-header>
+  
+      <div *ngFor="let task of listTasks()" >
+       <ion-item *ngIf="task.user_id == id">
+          <ion-icon *ngIf="task.status == 1" name="ios-checkmark-circle-outline" item-start color="secondary"></ion-icon>
+          <ion-icon *ngIf="task.status == 0" name="ios-close-circle-outline" item-start color="primary2"></ion-icon>
+          <ion-label>{{ task.name }}</ion-label>
+    
+          <button  *ngIf="task.status == 1" ion-button clear color="secondary" item-end>Done</button>
+          <button  *ngIf="task.status == 0" ion-button outline color="primary2" item-end (click)="editTask(task.id)">In Progress</button>
+       </ion-item>
+      </div>
+    </ion-list>
+   
+    <div class="centerBtn">
+        <button ion-button outline color="primary" (click)="gotoAddTask()">Add Task</button>  
+    </div>
+   
+   </ion-content>
