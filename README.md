@@ -8,9 +8,9 @@ User can :
   * Login
   * Add task
   * List all tasks
-  * Show number of tasks in simple chart
+  * Show number of tasks in simple chart.
 
-* I'm useing " ng2-charts " module, you can find it's implementation in Home component.
+And i'm useing " ng2-charts " module, you can find it's implementation in Home component.
 
 To run this App follow this commands after install Application:
   * npm install
