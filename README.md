@@ -3,7 +3,7 @@
 Mobile Application developed with " ionic 3 and angular 5 " 
 and useing JSON Server.
 
-User can be:
+User can :
   -Register
   -Login
   -Add task
