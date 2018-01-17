@@ -4,11 +4,11 @@ Mobile Application developed with " ionic 3 and angular 5 "
 and useing JSON Server.
 
 User can :
-  -Register
-  -Login
-  -Add task
-  -List all tasks
-  -Show number of tasks in simple chart
+  * Register
+  * Login
+  * Add task
+  * List all tasks
+  * Show number of tasks in simple chart
 
 * I'm useing " ng2-charts " module, you can find it's implementation in Home component.
 
