@@ -5,12 +5,6 @@
       "username": "hind",
       "password": "123",
       "id": 1
-    },
-    {
-      "email": "ahmed@gmail.com",
-      "name": "ahmed",
-      "password": "123",
-      "id": 2
     }
   ],
   "tasks": [
@@ -19,18 +13,6 @@
       "status": 1,
       "user_id": 1,
       "id": 1
-    },
-    {
-      "name": "j",
-      "status": 1,
-      "user_id": 1,
-      "id": 2
-    },
-    {
-      "name": "hi",
-      "status": 1,
-      "user_id": 1,
-      "id": 3
     }
   ]
 }
